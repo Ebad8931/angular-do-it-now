@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'angular-do-it-now' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-do-it-now');
+    expect(app.title).toEqual('DoItNow');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-do-it-now');
+    expect(compiled.querySelector('h1')?.textContent).toContain('DoItNow');
   });
 });
